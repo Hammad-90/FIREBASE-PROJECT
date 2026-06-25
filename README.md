@@ -1,1 +1,3 @@
-live link = "firebase-9.netlify.app"
+# FIREBASE PROJECT
+
+Live Link = https://firebase-9.netlify.app/
