@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firebase Login & Signup System</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <div id="loginPage">
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <button onclick="loginUser()">Login</button>
+
+        <div class="link">
+            Don't have an account?
+            <a onclick="showSignup()">Sign Up</a>
+        </div>
+
+        <div id="loginMessage"></div>
+
+    </div>
+
+   
+    <div id="signupPage" style="display:none">
+
+        <h2>Create Account</h2>
+
+        <input type="email" id="signupEmail" placeholder="Enter Email">
+
+        <input type="password" id="signupPassword" placeholder="Enter Password">
+
+        <button onclick="signupUser()">Sign Up</button>
+
+        <div class="link">
+            Already have an account?
+            <a onclick="showLogin()">Login</a>
+        </div>
+
+        <div id="signupMessage"></div>
+
+    </div>
+
+    
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+
+    <div class="logo-box">
+    🔥
+</div>
+
+    
+    <div id="homePage">
+
+        <nav>
+            <h3>Firebase Project</h3>
+            <button class="logout-btn" onclick="logoutUser()">Logout</button>
+        </nav>
+
+        <div class="user-box">
+            <h1>Welcome 🎉</h1>
+        </div>
+         <div class="cards">
+
+            <div class="card">
+                <h3>Total Users</h3>
+                <span>1,245</span>
+            </div>
+
+            <div class="card">
+                <h3>Projects</h3>
+                <span>48</span>
+            </div>
+    
+    </div>    
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
